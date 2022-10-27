@@ -29,4 +29,11 @@ int l =Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите номер столбца ");
 int k=Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine(matrix[l-1,k-1]);
+if (l>n || k>m)
+{
+    Console.WriteLine("Нет такой позиции в этой матрице");
+}
+else
+{
+    Console.WriteLine(matrix[l-1,k-1]);
+}
